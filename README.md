@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # student_wellness
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# student-wellness-app
+>>>>>>> 9e9a76938fa6a21938552259f287a67fa40ce07e
