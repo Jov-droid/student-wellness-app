@@ -1,20 +1,81 @@
-<<<<<<< HEAD
-# student_wellness
+# Student Wellness App
 
-A new Flutter project.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Getting Started
+A mental wellness app for students featuring mood tracking, journaling, meditation exercises, and emergency resources.
 
-This project is a starting point for a Flutter application.
+## Features
+- 😊 Mood tracking with visual history
+- 📝 Private journal with encryption
+- 🧘 Guided meditation exercises
+- 💬 Peer support chat
+- 🚨 Emergency contacts
+- 🌙 Light/dark theme
+- ✨ Smooth animations
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Home Screen
+| Light Theme | Dark Theme |
+|-------------|------------|
+| <img src="screenshots/white_theme.png" width="300"> | <img src="screenshots/dark_theme.png" width="300"> |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# student-wellness-app
->>>>>>> 9e9a76938fa6a21938552259f287a67fa40ce07e
+### Mood Tracking
+<img src="screenshots/mood_tracker.png" width="600">
+
+### Journal
+<img src="screenshots/journal.png" width="600">
+
+### Meditation
+| Light Theme | Dark Theme |
+|-------------|------------|
+| <img src="screenshots/light_meditation.png" width="300"> | <img src="screenshots/dark_meditation.png" width="300"> |
+
+### Emergency Contacts
+<img src="screenshots/emergency.png" width="600">
+
+## Installation
+
+### Prerequisites
+- Flutter SDK (v3.8.1 or higher)
+- Android Studio 
+- Android device/emulator (API 21+)
+
+### Steps
+1. Clone the repository:
+```bash
+git clone https://github.com/Jov-droid/student-wellness-app.git
+```
+
+2. Install dependencies:
+```bash
+cd student-wellness-app
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+### APK Installation
+Download [student_wellness_app.apk](student_wellness_app.apk) and install it on your Android device.
+
+## How to Use
+1. Track your mood daily using the mood tracker
+2. Write private journal entries
+3. Practice meditation with guided audio sessions
+4. Connect with peers in the support chat
+5. Access emergency contacts when needed
+6. Toggle between light/dark mode in Settings
+
+## Technical Stack
+- **Framework**: Flutter
+- **Database**: Hive
+- **State Management**: Provider
+- **Animations**: Lottie
+- **Local Storage**: flutter_secure_storage
+- **Audio Player**: just_audio
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
