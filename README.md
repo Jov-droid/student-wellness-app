@@ -18,21 +18,21 @@ A mental wellness app for students featuring mood tracking, journaling, meditati
 ### Home Screen
 | Light Theme | Dark Theme |
 |-------------|------------|
-| <img src="screenshots/white_theme.png" width="300"> | <img src="screenshots/dark_theme.png" width="300"> |
+| <img src="screenshots/white_theme.png"> | <img src="screenshots/dark_theme.png"> |
 
 ### Mood Tracking
-<img src="screenshots/mood_tracker.png" width="600">
+<img src="screenshots/mood_tracker.png">
 
 ### Journal
-<img src="screenshots/journal.png" width="600">
+<img src="screenshots/journal.png">
 
 ### Meditation
 | Light Theme | Dark Theme |
 |-------------|------------|
-| <img src="screenshots/light_meditation.png" width="300"> | <img src="screenshots/dark_meditation.png" width="300"> |
+| <img src="screenshots/light_meditation.png"> | <img src="screenshots/dark_meditation.png"> |
 
 ### Emergency Contacts
-<img src="screenshots/emergency.png" width="600">
+<img src="screenshots/emergency.png">
 
 ## Installation
 
