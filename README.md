@@ -41,7 +41,9 @@ flutter run
 ```
 
 ### APK Installation
-Download [student_wellness_app.apk](student_wellness_app.apk) and install it on your Android device.
+1. Go to the [Releases](https://github.com/Jov-droid/student-wellness-app/releases) section of this repository
+2. Download the latest APK file from the assets (e.g. `student_wellness_app.apk`)
+3. Install the APK on your Android device
 
 ## How to Use
 1. Track your mood daily using the mood tracker
