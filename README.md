@@ -14,25 +14,7 @@ A mental wellness app for students featuring mood tracking, journaling, meditati
 - ✨ Smooth animations
 
 ## Screenshots
-
-### Home Screen
-| Light Theme | Dark Theme |
-|-------------|------------|
-| <img src="screenshots/white_theme.png"> | <img src="screenshots/dark_theme.png"> |
-
-### Mood Tracking
-<img src="screenshots/mood_tracker.png">
-
-### Journal
-<img src="screenshots/journal.png">
-
-### Meditation
-| Light Theme | Dark Theme |
-|-------------|------------|
-| <img src="screenshots/light_meditation.png"> | <img src="screenshots/dark_meditation.png"> |
-
-### Emergency Contacts
-<img src="screenshots/emergency.png">
+- Screenshots of how my app works, are found in the main branch in the screenshots folder.
 
 ## Installation
 
