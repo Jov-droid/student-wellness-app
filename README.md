@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A mental wellness app for students featuring mood tracking, journaling, meditation exercises, and emergency resources.
+A *mental wellness mobile application* for students designed to support emotional health, self-reflection, relaxation, and connection with peers — built using **Flutter** with a modern, responsive UI. :contentReference[oaicite:0]{index=0}
 
 ## Features
 - 😊 Mood tracking with visual history
