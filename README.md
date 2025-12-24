@@ -2,17 +2,94 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A *mental wellness mobile application* for students designed to support emotional health, self-reflection, relaxation, and connection with peers — built using **Flutter** with a modern, responsive UI. :contentReference[oaicite:0]{index=0}
+A *mental wellness mobile application* for students designed to support emotional health, self-reflection, relaxation, and connection with peers — built using **Flutter** with a modern, responsive UI. 
 
-## Features
-- 😊 Mood tracking with visual history
-- 📝 Private journal with encryption
-- 🧘 Guided meditation exercises
-- 💬 Peer support chat
-- 🚨 Emergency contacts
-- 🌙 Light/dark theme
-- ✨ Smooth animations
+## 📱 App Overview
+The Student Wellness App helps students improve and track their mental health through the following core features:
+- 🎭 **Mood Tracking** — Daily mood inputs with visual history and trends.  
+- ✍️ **Private Journaling** — Secure text entries encrypted on the device.  
+- 🧘 **Guided Meditation** — Audio-based relaxation sessions.  
+- 💬 **Peer Support Chat** — Anonymous space to connect with peers.  
+- 🚨 **Emergency Resources** — Quick access to emergency contacts.  
+- 🌗 **Light/Dark Theme Support** — User preference toggle.  
+- ✨ **Smooth Animations & UX Transitions** — Engagement-focused design.
+  
+## 🧩 Architecture
 
+This app uses **Flutter**, which allows building *cross-platform mobile apps* (Android ) from a single codebase. 
+
+### 🛠️ Technical Stack
+
+| Component | Technology |
+|-----------|------------|
+| UI Framework | **Flutter (Dart)** |
+| State Management | **Provider** |
+| Local Database | **Hive** (fast key/value DB) |
+| Secure Local Storage | **flutter_secure_storage** |
+| Animations | **Lottie** |
+| Audio Playback | **just_audio** |
+| Platforms | Android | 
+
+
+
+## 🧠 Feature Breakdown
+
+### 📊 Mood Tracker
+
+- Students select emotions or mood states (e.g., 😃 happy, 😔 sad).  
+- Mood history is stored locally and presented in charts or timelines.  
+- Helps users spot patterns over time.  
+- Optimized with Hive for offline performance. 
+
+
+
+### 📝 Private Journal
+
+- Users can create journal entries — text, optionally with timestamps.  
+- Entries are stored securely and **encrypted** using `flutter_secure_storage`.  
+- Only the device can read the stored data — no cloud upload by default.  
+- Promotes reflective writing as a wellness habit. 
+
+
+
+### 🧘 Guided Meditation
+
+- Pre-loaded meditation sessions (audio or animation-enhanced).  
+- Uses **just_audio** for sound playback control (play/pause/stop).  
+- Lottie animations enhance visual experience.  
+- Designed for relaxation and anxiety reduction. 
+
+
+
+### 💬 Peer Support Chat
+
+- A real-time chat interface for students to support one another.  
+- May use local sockets/backend or third-party chat service (details in code).  
+- Encourages community and shared experiences.  
+- Privacy and moderation are important considerations. 
+
+
+
+### 🚨 Emergency Contacts
+
+- Fast access screen with customizable emergency numbers.  
+- Intended for moments when students need immediate help.  
+- Contacts can be called directly from the app interface. 
+
+
+
+## 🧠 How It Works
+
+1. **Install and launch** the app.  
+2. On first run, initialize local storage.  
+3. Track mood each day using the Mood Tracker.  
+4. Add journal entries any time for reflection.  
+5. Use guided meditation to relax.  
+6. Chat with peers for support and connection.  
+7. Access emergency contacts quickly when needed. 
+
+
+  
 ## Screenshots
 
 <img width="207" height="388" alt="white_theme" src="https://github.com/user-attachments/assets/f084c446-53bc-43ca-96da-8f817f459068" />
@@ -33,7 +110,8 @@ A *mental wellness mobile application* for students designed to support emotiona
 <img width="225" height="382" alt="emergency" src="https://github.com/user-attachments/assets/85048371-8247-486c-8a2f-b6af84952823" />
 
 
-## Installation
+## ⚙️ Installation
+
 
 ### Prerequisites
 - Flutter SDK (v3.8.1 or higher)
@@ -46,37 +124,35 @@ A *mental wellness mobile application* for students designed to support emotiona
 git clone https://github.com/Jov-droid/student-wellness-app.git
 ```
 
-2. Install dependencies:
-```bash
+# 2. Change directory
 cd student-wellness-app
-flutter pub get
-```
 
-3. Run the app:
-```bash
+# 3. Get dependencies
+flutter pub get
+
+# 4. Run on device/emulator
 flutter run
-```
 
 ### APK Installation
 1. Go to the [Releases](https://github.com/Jov-droid/student-wellness-app/releases) section of this repository
 2. Download the latest APK file from the assets (e.g. `app-release.apk`)
 3. Install the APK on your Android device
 
-## How to Use
-1. Track your mood daily using the mood tracker
-2. Write private journal entries
-3. Practice meditation with guided audio sessions
-4. Connect with peers in the support chat
-5. Access emergency contacts when needed
-6. Toggle between light/dark mode in Settings
+## 📁 Code Structure
+├── android/                # Android native project
+├── ios/                    # iOS native project
+├── lib/                    # Main Flutter source code
+│   ├── models/             # App data models
+│   ├── providers/          # Provider state management
+│   ├── screens/            # UI Screens
+│   ├── services/           # Data & audio services
+│   ├── utils/              # Utility classes & helpers
+├── assets/                 # Media assets & images
+├── screenshots/            # Example UI screenshots
+├── test/                   # Unit/widget tests
+├── pubspec.yaml            # Dependencies & metadata
 
-## Technical Stack
-- **Framework**: Flutter
-- **Database**: Hive
-- **State Management**: Provider
-- **Animations**: Lottie
-- **Local Storage**: flutter_secure_storage
-- **Audio Player**: just_audio
+The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
