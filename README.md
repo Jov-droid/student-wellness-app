@@ -154,10 +154,36 @@ flutter run
 ├── screenshots/            # UI screenshots for documentation
 ├── test/                   # Unit and widget tests
 └── pubspec.yaml            # Dependencies & metadata
-
-
-
+```
 The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
+
+## 📊 Architecture Diagram
+┌─────────────────────────────┐
+│        UI / Screens         │
+│   (Flutter Widgets)         │
+└─────────────▲───────────────┘
+              │
+              │ listens to
+              │
+┌─────────────┴───────────────┐
+│     Providers (State)       │
+│  Business Coordination     │
+└─────────────▲───────────────┘
+              │
+              │ uses
+              │
+┌─────────────┴───────────────┐
+│        Services Layer       │
+│ Storage • Audio • APIs     │
+└─────────────▲───────────────┘
+              │
+              │ operates on
+              │
+┌─────────────┴───────────────┐
+│        Models Layer         │
+│   Core App Data Entities    │
+└─────────────────────────────┘
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
