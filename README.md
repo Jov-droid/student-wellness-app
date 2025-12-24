@@ -141,49 +141,93 @@ flutter run
 ## 📁 Project Structure
 
 ```text
-├── android/                # Android native project
-├── ios/                    # iOS native project
-├── lib/                    # Main Flutter source code
-│   ├── models/             # App data models
-│   ├── providers/          # State management (Provider)
-│   ├── screens/            # UI Screens
-│   ├── services/           # Business logic & data services
-│   ├── utils/              # Utility classes & helpers
-│   └── main.dart           # Application entry point
-├── assets/                 # Media assets (images, audio, animations)
-├── screenshots/            # UI screenshots for documentation
-├── test/                   # Unit and widget tests
-└── pubspec.yaml            # Dependencies & metadata
+student-wellness-app/
+│
+├── android/                     • Native Android project files
+├── ios/                         • Native iOS project files
+├── lib/                         • Main Dart codebase
+│   ├── main.dart                • App entry point
+│   ├── screens/                 • UI screens (mood, journal, meditation…)
+│   ├── providers/               • State management (Provider)
+│   ├── models/                  • Data models (e.g., MoodEntry, Journal)
+│   ├── services/                • Services (Hive storage, audio, chat)
+│   ├── widgets/                 • Reusable UI widgets
+│   └── utils/                   • Helpers, theme, navigation
+│
+├── assets/                      • Images, meditations, Lottie animations
+├── test/                        • Unit & widget tests
+├── web/                        • Web configuration (optional)
+├── linux/, macos/, windows/    • Platform configs
+├── screenshots/                • Demo screenshots
+├── pubspec.yaml                • Dependencies & assets
+├── README.md                   • Project documentation
+└── .gitignore                  • Files to ignore in version control
+
 ```
 The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
 
+## 🧠 Core Modules / Components
+# 📱 UI Layer
+   Responsible for visual screens and user interactions.
+
+# Screens:
+-Mood Tracker UI
+-Journal Screen
+-Meditation UI
+-Support Chat
+-Emergency Contacts
+-Settings (Light/Dark theme)
+
+Widgets:
+    -Reusable UI parts (buttons, list cards, trackers)
+
+# 📊 State Management
+Provider is used to manage app state (e.g., current mood, journal entries, theme mode, chat status). 
+GitHub
+
+# 📦 Data Layer
+- Manages storage and retrieval of app data:
+   -Hive DB
+- Persistent storage for moods and journal entries:
+  -flutter_secure_storage
+- Private storage for encrypted data
+
+Services:
+
+Abstraction to handle storage, authentication (if any), audio playback, etc.
+
+🎧 Feature Services:
+-just_audio:
+    Audio service for guided meditation
+-Lottie animations:
+    UI animations support
+
 ## 📊 Architecture Diagram
 ```text
-┌─────────────────────────────┐
-│        UI / Screens         │
-│   (Flutter Widgets)         │
-└─────────────▲───────────────┘
-              │
-              │ listens to
-              │
-┌─────────────┴───────────────┐
-│     Providers (State)       │
-│  Business Coordination     │
-└─────────────▲───────────────┘
-              │
-              │ uses
-              │
-┌─────────────┴───────────────┐
-│        Services Layer       │
-│ Storage • Audio • APIs     │
-└─────────────▲───────────────┘
-              │
-              │ operates on
-              │
-┌─────────────┴───────────────┐
-│        Models Layer         │
-│   Core App Data Entities    │
-└─────────────────────────────┘
+                          +------------------------+
+                          |   Student Wellness App |
+                          +------------------------+
+                                       |
+                          +---------------------------------+
+                          |        Flutter Framework        |
+                          +---------------------------------+
+                                       |
+       +-------------------------------+-----------------------------+
+       |                                                            |
++-------------+                                            +----------------+
+|   UI Layer  |                                            |   Data Layer   |
+| (Screens &  |<------------------------------------------>|  Hive Storage  |
+|  Widgets)   |                                            | Secure Storage |
++-------------+                                            +----------------+
+       |                                                             |
+       |                                                             |
+       v                                                             v
++----------------+                                         +-----------------+
+| State Mgmt.    |                                         | Feature Services|
+| (Provider)     |                                         | just_audio       |
++----------------+                                         | Lottie Animations|
+                                                           +-----------------+
+
 ```
 
 ## License
