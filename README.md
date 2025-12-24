@@ -158,6 +158,7 @@ flutter run
 The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
 
 ## 📊 Architecture Diagram
+```text
 ┌─────────────────────────────┐
 │        UI / Screens         │
 │   (Flutter Widgets)         │
@@ -183,7 +184,7 @@ The lib/ folder houses most of the app logic: screens, UI widgets, local data ha
 │        Models Layer         │
 │   Core App Data Entities    │
 └─────────────────────────────┘
-
+```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
