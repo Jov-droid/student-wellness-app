@@ -143,14 +143,16 @@ flutter run
 ├── ios/                    # iOS native project
 ├── lib/                    # Main Flutter source code
 │   ├── models/             # App data models
-│   ├── providers/          # Provider state management
+│   ├── providers/          # State management (Provider)
 │   ├── screens/            # UI Screens
-│   ├── services/           # Data & audio services
+│   ├── services/           # Business logic & data services
 │   ├── utils/              # Utility classes & helpers
-├── assets/                 # Media assets & images
-├── screenshots/            # Example UI screenshots
-├── test/                   # Unit/widget tests
-├── pubspec.yaml            # Dependencies & metadata
+│   └── main.dart           # Application entry point
+├── assets/                 # Media assets (images, audio, animations)
+├── screenshots/            # UI screenshots for documentation
+├── test/                   # Unit and widget tests
+└── pubspec.yaml            # Dependencies & metadata
+
 
 The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
 
