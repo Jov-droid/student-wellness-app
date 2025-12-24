@@ -138,7 +138,9 @@ flutter run
 2. Download the latest APK file from the assets (e.g. `app-release.apk`)
 3. Install the APK on your Android device
 
-## 📁 Code Structure
+## 📁 Project Structure
+
+```text
 ├── android/                # Android native project
 ├── ios/                    # iOS native project
 ├── lib/                    # Main Flutter source code
@@ -152,6 +154,7 @@ flutter run
 ├── screenshots/            # UI screenshots for documentation
 ├── test/                   # Unit and widget tests
 └── pubspec.yaml            # Dependencies & metadata
+
 
 
 The lib/ folder houses most of the app logic: screens, UI widgets, local data handling, audio, and theming.
