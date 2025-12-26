@@ -125,13 +125,17 @@ git clone https://github.com/Jov-droid/student-wellness-app.git
 ```
 
  2. Change directory
+  ```bash
 cd student-wellness-app
-
- 3. Get dependencies
+```
+ 4. Get dependencies
+```bash    
 flutter pub get
-
- 4. Run on device/emulator
+```
+5. Run on device/emulator
+```bash   
 flutter run
+```
 
 ### APK Installation
 1. Go to the [Releases](https://github.com/Jov-droid/student-wellness-app/releases) section of this repository
