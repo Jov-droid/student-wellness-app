@@ -124,13 +124,13 @@ This app uses **Flutter**, which allows building *cross-platform mobile apps* (A
 git clone https://github.com/Jov-droid/student-wellness-app.git
 ```
 
-# 2. Change directory
+ 2. Change directory
 cd student-wellness-app
 
-# 3. Get dependencies
+ 3. Get dependencies
 flutter pub get
 
-# 4. Run on device/emulator
+ 4. Run on device/emulator
 flutter run
 
 ### APK Installation
@@ -171,35 +171,33 @@ The lib/ folder houses most of the app logic: screens, UI widgets, local data ha
    Responsible for visual screens and user interactions.
 
 # Screens:
--Mood Tracker UI
--Journal Screen
--Meditation UI
--Support Chat
--Emergency Contacts
--Settings (Light/Dark theme)
+- Mood Tracker UI
+- Journal Screen
+- Meditation UI
+- Support Chat
+- Emergency Contacts
+- Settings (Light/Dark theme)
 
 Widgets:
-    -Reusable UI parts (buttons, list cards, trackers)
+    - Reusable UI parts (buttons, list cards, trackers)
 
 # 📊 State Management
 Provider is used to manage app state (e.g., current mood, journal entries, theme mode, chat status). 
 GitHub
 
 # 📦 Data Layer
-- Manages storage and retrieval of app data:
-   -Hive DB
-- Persistent storage for moods and journal entries:
-  -flutter_secure_storage
-- Private storage for encrypted data
+ Manages storage and retrieval of app data.
+- Hive DB:
+    Persistent storage for moods and journal entries.
+- flutter_secure_storage:
+    Private storage for encrypted data.
+- Services:
+    Abstraction to handle storage, authentication (if any), audio playback, etc.
 
-Services:
-
-Abstraction to handle storage, authentication (if any), audio playback, etc.
-
-🎧 Feature Services:
--just_audio:
+# 🎧 Feature Services:
+- just_audio:
     Audio service for guided meditation
--Lottie animations:
+- Lottie animations:
     UI animations support
 
 ## 📊 Architecture Diagram
