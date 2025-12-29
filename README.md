@@ -141,6 +141,9 @@ flutter run
 1. Go to the [Releases](https://github.com/Jov-droid/student-wellness-app/releases) section of this repository
 2. Download the latest APK file from the assets (e.g. `app-release.apk`)
 3. Install the APK on your Android device
+4. The following image shows that I have installed the app on my phone following the instructions given above:
+   ![WhatsApp Image 2025-12-29 at 14 50 53](https://github.com/user-attachments/assets/0acdde68-4021-4e1a-ab9a-42b0ab57f4ec)
+
 
 ## 📁 Project Structure
 
